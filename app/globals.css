@@ -107,7 +107,7 @@
   --sidebar-primary: hsl(224.3 76.3% 48%);
   --sidebar-primary-foreground: hsl(0 0% 100%);
   --sidebar-accent: hsl(240 3.7% 15.9%);
-  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-accent-foreground: hsla(240, 5%, 96%);
   --sidebar-border: hsl(240 3.7% 15.9%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
@@ -119,4 +119,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+div#devtools-indicator.nextjs-toast {
+  display: none !important;
+  visibility: hidden !important;
 }
